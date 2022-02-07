@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Items = (props) => {
   return (
-    <div className="col-lg-4 col-md-3 boxGalleryItem">
+    <div className="col-lg-4 col-md-3 cardItem">
       <Link to={`/item/${props.id}`} className="noTextDecoration blackText">
         <img alt={props.productos.name} src={props.productos.image}></img>
       </Link>

@@ -1,4 +1,5 @@
 import React from "react";
+import ItemAbout from "../components/ItemAbout";
 import { NavBar } from "../components/NavBar";
 import { ItemListContainer } from "../components/ItemListContainer";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -26,10 +27,13 @@ const RouterApp = () => {
             <ItemCategoryContainer />
           </Route>
           <Route path="/buyform">
-            <BuyForm></BuyForm>
+            <BuyForm />
+          </Route>
+          <Route path="/products">
+            <ItemListContainer />
           </Route>
           <Route path="/">
-            <ItemListContainer />
+            <ItemAbout />
           </Route>
         </Switch>
         <Footer />

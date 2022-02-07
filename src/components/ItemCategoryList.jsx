@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 export const ItemCategoryList = (props) => {
   return (
-    <div className="col-lg-4 col-md-4 boxGalleryItem">
+    <div className="col-lg-3 col-md-3 cardItem">
       <Link
         to={`/item/${props.productos.id}`}
         className="noTextDecoration blackText"
       >
         <img
-          alt={props.productos.item.image}
+          alt={props.productos.item.name}
           src={props.productos.item.image}
         ></img>
       </Link>

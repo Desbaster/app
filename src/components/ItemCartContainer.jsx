@@ -9,7 +9,7 @@ const ItemCartContainer = () => {
   return cart.length === 0 ? (
     <CartEmpty />
   ) : (
-    <div className="container cartContainer p-1">
+    <div className="container cartContainer mt-5 mb-5 text-center">
       <div className="row">
         <div className="col-12 col-lg-12">
           <ItemCart />

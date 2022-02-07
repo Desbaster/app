@@ -1,6 +1,5 @@
 import React from "react";
 import { DropdownButton } from "react-bootstrap";
-import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default function Drop() {
@@ -12,33 +11,30 @@ export default function Drop() {
           title="Productos"
           variant="dark"
         >
-          <Dropdown.Item>
+          <h6 className="dropItem">
             <Link
               to={"/category/Pulseras"}
-              activeClassName="selectedLink"
               className="p-1 navLink noTextDecoration"
             >
               Pulseras
             </Link>
-          </Dropdown.Item>
-          <Dropdown.Item>
+          </h6>
+          <h6 className="dropItem">
             <Link
               className="p-1 navLink noTextDecoration"
               to={"/category/Tobilleras"}
-              activeClassName="selectedLink"
             >
               Tobilleras
             </Link>
-          </Dropdown.Item>
-          <Dropdown.Item>
+          </h6>
+          <h6 className="dropItem">
             <Link
               className="p-1 textNoWrap navLink noTextDecoration "
-              activeClassName="selectedLink textNoWrap "
               to={"/category/Collares"}
             >
               Collares
             </Link>
-          </Dropdown.Item>
+          </h6>
         </DropdownButton>
       </div>
     </div>

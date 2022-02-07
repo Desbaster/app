@@ -9,7 +9,7 @@ export const ItemListContainer = () => {
   useEffect(() => {
     const array = [];
     const db = getFirestore();
-    console.log(getFirestore());
+    // console.log(getFirestore());
     db.collection("items")
       .get()
       .then((querySnapshot) => {

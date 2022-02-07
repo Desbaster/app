@@ -9,13 +9,13 @@ export function NavBar() {
   const { itemsAmount } = useContext(CartContext);
   return (
     <>
-      <div className="container header-container ">
+      <div className="container">
         <div className="row align-items-center justify-content-between  pt-2 ">
           <div className="col-3 col-sm-2 col-md-2 col-lg-4 ">
             <div>
               <Link
                 id="gab"
-                to={`/`}
+                to={`/products`}
                 className="d-flex flex-nowrap align-items-center"
               >
                 <img
@@ -33,7 +33,6 @@ export function NavBar() {
               <Link
                 to={`/shopping-cart`}
                 className="cart textNoWrap noTextDecoration mr-3 p-1"
-                activeClassName="selectedLink"
               >
                 {itemsAmount() > 0 && <span>{itemsAmount()}</span>}
                 <img src={cart} width="30" height="30" alt="cart logo" />

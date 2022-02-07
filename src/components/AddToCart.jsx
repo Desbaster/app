@@ -13,13 +13,13 @@ const AddToCart = (props) => {
   useEffect(() => {
     const stock = props.product.item.stock;
     if (counter === stock) {
-      setColour({ colour2: "#3483fa", colour1: "#cbc7c7" });
+      setColour({ colour2: "#a267f5", colour1: "#cbc7c7" });
     } else if (counter === 1) {
-      setColour({ colour1: "#3483fa", colour2: "#cbc7c7" });
+      setColour({ colour1: "#a267f5", colour2: "#cbc7c7" });
     } else {
       setColour({
-        colour1: "#3483fa",
-        colour2: "#3483fa",
+        colour1: "#a267f5",
+        colour2: "#a267f5",
       });
     }
   }, [counter, props.product.item.stock]);
@@ -41,13 +41,13 @@ const AddToCart = (props) => {
   return !check ? (
     <div className="m-5 d-flex flex-direction-row flex-nowrap">
       <button
-        className="m-1 p-1  button2"
+        className="m-2 button2"
         style={{ backgroundColor: `${colour.colour2}` }}
         onClick={() => minusItem()}
       >
         -
       </button>
-      <input type="number" className="inputWitdh" value={counter} readOnly />
+      <input type="number" id="inputW" className="m-2" value={counter} readOnly />
       <button
         className="m-2 button2"
         style={{ backgroundColor: `${colour.colour1}` }}
@@ -56,7 +56,7 @@ const AddToCart = (props) => {
         +
       </button>
       <button className="button2" onClick={() => setCheck(true)}>
-        Check
+        Verificar stock
       </button>
     </div>
   ) : (

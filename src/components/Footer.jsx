@@ -11,7 +11,7 @@ const Footer = () => {
               <nav className="footerTitles">
                 <h3 className="footerLink">Contacto</h3>
                 <li>
-                  <Link to="/">Nosotros</Link>
+                  <Link to="/About">Nosotros</Link>
                 </li>
                 <li>
                   <Link to="/">Whatsapp</Link>

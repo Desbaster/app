@@ -22,7 +22,7 @@ export const ItemCategoryContainer = () => {
         setAgrego(true);
       })
       .catch((error) => {
-        console.log("Error al coleccionar los datos");
+        console.log("Error en los datos");
       });
   }, [categoryId]);
 
@@ -30,7 +30,7 @@ export const ItemCategoryContainer = () => {
     <div>
       <div className="container align-items-center d-flex flex-column justify-content-center">
         <h2 className="mt-4 font-weight-bold"> {categoryId}</h2>
-        <div className="row justify-content-around box ">
+        <div className="row justify-content-around cardBox ">
           {itemsFromDB.map((value) => (
             <ItemCategoryList key={value.id} productos={value} />
           ))}

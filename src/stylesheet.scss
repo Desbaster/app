@@ -1,6 +1,7 @@
 .inputWitdh {
   width: 40px;
   height: 30px;
+  text-align: center;
 }
 
 input::-webkit-outer-spin-button,
@@ -17,7 +18,6 @@ input::-webkit-inner-spin-button {
   background: none;
   color: inherit;
   border: none;
-  padding: 10px;
   font: inherit;
   cursor: pointer;
   outline: inherit;
@@ -51,6 +51,8 @@ input[type="number"] {
     img {
       height: 180px;
       object-fit: contain;
+      border: solid 2px #a267f5;
+      border-radius: 10px;
     }
   }
 }
@@ -68,13 +70,13 @@ input[type="number"] {
   color: black;
 }
 
-.box {
-  border-radius: 10px;
+.cardBox {
+  border-radius: 20px;
   margin: 30px;
   padding: 30px;
   position: relative;
   width: 100%;
-  .boxGalleryItem {
+  .cardItem {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -95,21 +97,23 @@ input[type="number"] {
       width: 90%;
       height: 180px;
       object-fit: contain;
+      border: solid 2px #a267f5;
+      border-radius: 10px;
     }
 
     button {
       position: absolute;
       top: 320px;
-      color: white;
+      color: rgb(247, 243, 243);
       background-color: #000000;
       font-weight: bold;
-      border-radius: 10px;
+      border-radius: 20px;
     }
 
     .cardPrice {
       font-weight: bold;
-      color: Red;
-      position: absolute;
+      color: #a267f5;
+      // position: absolute;
       top: 400px;
     }
 
@@ -121,6 +125,7 @@ input[type="number"] {
     }
   }
 }
+
 .leftBorder {
   display: flex;
   flex-direction: column;
@@ -130,24 +135,23 @@ input[type="number"] {
 .itemDetail {
   border: solid 1px rgba(250, 244, 224, 0.836);
   margin-top: 2%;
+  border-radius: 20px;
   font-weight: 700;
-  font-family: Roboto, "Times New Roman", serif;
   align-self: flex-start;
   padding: 30px;
   box-shadow: 13px 9px 22px -1px rgba(0, 0, 0, 0.16);
   -webkit-box-shadow: 13px 9px 22px -1px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 13px 9px 22px -1px rgba(0, 0, 0, 0.16);
-  h3 {
+  h3, h6 {
     color: #3c4858;
   }
+
   img {
-    width: 100%;
+    width: fit-content;
     height: 380px;
     object-fit: contain;
-  }
-
-  h4 {
-    color: #a267f5;
+    border: solid 2px #a267f5;
+    border-radius: 10px;
   }
 }
 
@@ -156,7 +160,7 @@ input {
 }
 
 body {
-  background-color: #feffdb;
+  background-color: #f6f7f1;
 }
 
 @media screen and (max-width: 780px) {
@@ -191,6 +195,10 @@ header {
   background-color: #a267f5;
   border-radius: 5px;
   color: black;
+}
+
+.dropItem {
+  text-align: center;
 }
 
 .navLink {
@@ -281,15 +289,17 @@ footer {
   background-color: #a267f5;
   color: white;
   font-size: 1em;
+  font-weight: bolder;
   align-self: center;
   border-radius: 5px;
+  width: fit-content;
 }
 
 #spinner {
   display: flex;
   justify-content: center;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   margin: auto;
 }
 
@@ -301,4 +311,28 @@ footer {
     text-shadow: 0 -1px 4px rgb(92, 86, 93), 0 -2px 10px rgba(50, 42, 54, 0.774),
       0 -10px 20px #130d16, 0 -18px 40px rgb(0, 0, 0);
   }
+}
+
+#image {
+  text-align: center;
+}
+
+#inputW {
+  width: 30px;
+  text-align: center;
+}
+
+#close {
+  border: none;
+}
+
+#about {
+  border-radius: 10px;
+  width: 100vw;
+  max-width: 100vh;
+  
+}
+
+.about {
+  padding-top: calc(10vh / 2);
 }

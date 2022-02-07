@@ -27,14 +27,14 @@ const Button = ({ item }) => {
         -
       </button>
       <input
-        className="buttonAlone inputWitdh pl-4"
+        className="buttonAlone inputWitdh"
         value={item.quantity}
         readOnly
       />
       <button
         className="button2"
-        style={{ backgroundColor: `${colour}` }}
         onClick={plusItem}
+        style={{ backgroundColor: `${colour}` }}
       >
         +
       </button>
